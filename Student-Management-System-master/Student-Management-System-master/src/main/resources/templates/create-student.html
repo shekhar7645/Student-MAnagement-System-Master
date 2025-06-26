@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<body style="padding: 10%; background-color: #008585;">
+
+<u><h1 class="text-center" style="padding-bottom: 5%; font-family: Audrey;  color: #0e192e;">Student Registration Form</h1></u>
+
+<div style="align-content: center; padding :5%; background-color: #74a892; margin-left: 25%; margin-right: 25%; border-radius: 5%;">
+   <form th:action="@{/students}" th:object="${student}" method="post">
+       
+        
+         
+  <div class="mb-3 mt-3">
+    <label for="email" class="form-label">Student First Name</label>
+    <input  type="text"  class="form-control" id="firstName" placeholder="Enter FirstName" name="firstName" required="required">
+    
+  </div>
+  
+  <div class="mb-3">
+    <label for="pwd" class="form-label">Student Last Name</label>
+    <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" name="lastName" required="required">
+  </div>
+  
+  <div class="mb-3">
+    <label for="pwd" class="form-label">Student Email</label>
+    <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required="required">
+  </div>
+  
+  <div style="text-align: center;">
+  <button  type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+
+   </div>
+  
+</body>
+</html>
