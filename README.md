@@ -1,1 +1,1 @@
-# Student-MAnagement-System-Master
+# Student-Management-System-Master
